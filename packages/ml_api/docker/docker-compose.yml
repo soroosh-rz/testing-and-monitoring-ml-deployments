@@ -57,6 +57,7 @@ services:
       - GF_USERS_ALLOW_SIGN_UP=false
 
   cadvisor:
+    privileged: true
     image: google/cadvisor
     volumes:
       - /:/rootfs:ro
